@@ -3,35 +3,11 @@ import { Timer, ShoppingCart, Coffee, Package } from 'lucide-react'
 import { Card } from './components/card';
 import cupCoffee from '../../assets/cupCoffee.svg';
 import { dataCoffees } from '../../assets/coffeeIcons/ExportImages'
-import { useState } from 'react';
 
 export const CartContext = createContext({} as unknown);
 
-interface cardProps {
-    image: string
-    alt: string
-    type: string
-    title: string
-    subtitle: string
-    price: string
-    quantity: number
-}
 
 export function Home() {
-    const [quantities, setQuantities] = useState<number[]>(Array(14).fill(1)); // Supondo 14 cards
-
-    const handleAdd = (index: number) => {
-        setQuantities(quantities.map((qty, i) => i === index ? qty + 1 : qty));
-    };
-
-    const handleRemove = (index: number) => {
-        setQuantities(quantities.map((qty, i) => i === index ? (qty > 1 ? qty - 1 : 1) : qty));
-    };
-
-    const handleAddToCheckout = (card: cardProps , index: number) => {
-        card.quantity = quantities[index];
-        console.log(card);
-    };
 
     return (
         <div className='max-w-[70rem] mx-auto'>
@@ -79,19 +55,10 @@ export function Home() {
             <div className='w-full'>
                 <h2 className='font-ballo2 font-bold text-2xl lg:text-3xl text-center lg:text-left'>Nossos Cafés</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 my-16 gap-y-8">
-                    {dataCoffees.map((card, index) => (
+                    {dataCoffees.map((coffee) => (
                         <Card
-                            key={index}
-                            image={card.image}
-                            alt={card.alt}
-                            type={card.type}
-                            title={card.title}
-                            subtitle={card.subtitle}
-                            price={card.price}
-                            quantity={quantities[index]}
-                            onAdd={() => handleAdd(index)}
-                            onRemove={() => handleRemove(index)}
-                            addToCheckout={() => handleAddToCheckout(card, index)}
+                            key={coffee.id}
+                            coffee={coffee}
                         />
                     ))}
             </div>

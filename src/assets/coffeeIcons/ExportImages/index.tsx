@@ -32,6 +32,7 @@ const images ={
 
 export const dataCoffees = [
     {
+        id: "0",
         image: images.Expresso,
         alt: 'Expresso',
         type: 'TRADICIONAL',
@@ -41,6 +42,7 @@ export const dataCoffees = [
         quantity: 1
     },
     {
+        id: "1",
         image: images.americano,
         alt: 'Americano',
         type: 'TRADICIONAL',
@@ -50,6 +52,7 @@ export const dataCoffees = [
         quantity: 1
     },
     {
+        id: "2",
         image: images.ExpressoCrema,
         alt: 'Expresso Cremoso',
         type: 'TRADICIONAL',
@@ -59,6 +62,7 @@ export const dataCoffees = [
         quantity: 1
     },
     {
+        id: "3",
         image: images.CafeGelado,
         alt: 'Café Gelado',
         type: 'TRADICIONAL',
@@ -68,6 +72,7 @@ export const dataCoffees = [
         quantity: 1
     },
     {
+        id: "4",
         image: images.CafeComLeite,
         alt: 'Café com Leite',
         type: 'TRADICIONAL',
@@ -77,6 +82,7 @@ export const dataCoffees = [
         quantity: 1
     },
     {
+        id: "5",
         image: images.latte,
         alt: 'Latte',
         type: 'TRADICIONAL',
@@ -86,6 +92,7 @@ export const dataCoffees = [
         quantity: 1
     },
     {
+        id: "6",
         image: images.cappuccino,
         alt: 'Cappuccino',
         type: 'TRADICIONAL',
@@ -95,6 +102,7 @@ export const dataCoffees = [
         quantity: 1
     },
     {
+        id: "7",
         image: images.macchiato,
         alt: 'Macchiato',
         type: 'TRADICIONAL',
@@ -104,6 +112,7 @@ export const dataCoffees = [
         quantity: 1
     },
     {
+        id: "8",
         image: images.Mochaccino,
         alt: 'Mochaccino',
         type: 'TRADICIONAL',
@@ -113,6 +122,7 @@ export const dataCoffees = [
         quantity: 1
     },
     {
+        id: "9",
         image: images.ChocolateQuente,
         alt: 'Chocolate Quente',
         type: 'ESPECIAL',
@@ -122,6 +132,7 @@ export const dataCoffees = [
         quantity: 1
     },
     {
+        id: "10",
         image: images.Cubano,
         alt: 'Cubano',
         type: 'ALCOÓLICO',
@@ -131,6 +142,7 @@ export const dataCoffees = [
         quantity: 1
     },
     {
+        id: "11",
         image: images.Havaiano,
         alt: 'Havaiano',
         type: 'ESPECIAL',
@@ -140,6 +152,7 @@ export const dataCoffees = [
         quantity: 1
     },
     {
+        id: "12",
         image: images.Arabe,
         alt: 'Árabe',
         type: 'ESPECIAL',
@@ -149,6 +162,7 @@ export const dataCoffees = [
         quantity: 1
     },
     {
+        id: "13",
         image: images.irlandes,
         alt: 'Irlandês',
         type: 'ALCOÓLICO',
